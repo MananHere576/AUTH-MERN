@@ -41,49 +41,45 @@ This is a **MERN (MongoDB, Express.js, React, Node.js) authentication system**, 
    ```sh
    git clone https://github.com/MananHere576/MERN-Auth.git
    cd MERN-Auth
-Backend Setup
+   ```
 
-sh
-Copy
-Edit
-cd backend
-npm install
-npm start
-Ensure MongoDB is running and configure the .env file with your database URL and JWT secret.
+2. **Backend Setup**
+   ```sh
+   cd backend
+   npm install
+   npm start
+   ```
+   Ensure MongoDB is running and configure the `.env` file with your database URL and JWT secret.
 
-Frontend Setup
+3. **Frontend Setup**
+   ```sh
+   cd ../frontend
+   npm install
+   npm start
+   ```
 
-sh
-Copy
-Edit
-cd ../frontend
-npm install
-npm start
-Access the Application Open your browser and navigate to:
+4. **Access the Application**
+   Open your browser and navigate to:
+   ```sh
+   http://localhost:3000
+   ```
 
-sh
-Copy
-Edit
-http://localhost:3000
-Environment Variables
-Create a .env file in the backend directory and add:
-
-sh
-Copy
-Edit
-PORT=5000
+## Environment Variables  
+Create a `.env` file in the **backend** directory and add:  
+```sh
+PORT=8080
 MONGO_CONN="your_mongodb_connection_string"
 JWT_SECRET="your_jwt_secret"
-In the frontend, create a .env file and add:
+```
 
-sh
-Copy
-Edit
+In the **frontend**, create a `.env` file and add:  
+```sh
 REACT_APP_API_URL=http://localhost:5000
-Folder Structure
-lua
-Copy
-Edit
+```
+
+## Folder Structure
+
+```
 MERN-Auth/
 │-- backend/
 │   │-- Controllers/
@@ -98,19 +94,24 @@ MERN-Auth/
 │   │-- public/
 │   │-- package.json
 │-- README.md
-API Endpoints
-Endpoint	Method	Description
-/api/auth/signup	POST	Register a new user
-/api/auth/login	POST	Authenticate user and return JWT
-/api/auth/me	GET	Get user details (protected)
-/api/auth/logout	POST	Logout user and clear session
-Future Enhancements
-OAuth-based login (Google, GitHub, etc.)
-Email verification during signup
-Multi-factor authentication (MFA)
-Password reset functionality
-Admin dashboard for user management
-Author
-Created by Manan for learning and practice purposes. 🚀
+```
+
+## API Endpoints
+| Endpoint        | Method | Description |
+|--------------- |--------|-------------|
+| `/api/auth/signup` | POST | Register a new user |
+| `/api/auth/login`  | POST | Authenticate user and return JWT |
+| `/api/auth/me`     | GET  | Get user details (protected) |
+| `/api/auth/logout` | POST | Logout user and clear session |
+
+## Future Enhancements
+- OAuth-based login (Google, GitHub, etc.)
+- Email verification during signup
+- Multi-factor authentication (MFA)
+- Password reset functionality
+- Admin dashboard for user management
+
+## Author
+Created by **Manan** for learning and practice purposes. 🚀
 
 Feel free to contribute or provide feedback!
